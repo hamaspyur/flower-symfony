@@ -1,0 +1,6 @@
+all:
+  petal_type:
+    1:      Flower
+    2:      User
+    flower: 1
+    user:   2

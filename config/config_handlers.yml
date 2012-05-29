@@ -1,0 +1,2 @@
+config/global.yml:
+  class:    sfDefineEnvironmentConfigHandler

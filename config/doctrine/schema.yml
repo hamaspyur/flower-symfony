@@ -1,0 +1,22 @@
+User:
+  columns:
+    name:           string(255)
+    email:          string(100)
+    facebook_id:    string(30)
+    facebook_token: string(100)
+
+Flower:
+  columns:
+    type:           integer
+    name:           string(100)
+    description:    string(5000)
+    user_id:        integer
+  relations:
+    User:           { class: User, foreignAlias: Users, onDelete: SET NULL }
+
+Petal:
+  columns:
+    flower1_id:     integer
+    flower2_id:     integer
+    connection_id:  integer
+    colour:         string(10)

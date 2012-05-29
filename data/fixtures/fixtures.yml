@@ -1,17 +1,92 @@
-# # Populate this file with data to be loaded by your ORM's *:data-load task.
-# # You can create multiple files in this directory (i.e. 010_users.yml,
-# # 020_articles.yml, etc) which will be loaded in alphabetical order.
-# # 
-# # See documentation for your ORM's *:data-load task for more information.
-# 
-# User:
-#   fabien:
-#     username: fabien
-#     password: changeme
-#     name:     Fabien Potencier
-#     email:    fabien.potencier@symfony-project.com
-#   kris:
-#     username: Kris.Wallsmith
-#     password: changeme
-#     name:     Kris Wallsmith
-#     email:    kris.wallsmith@symfony-project.com
+Flower:
+  hamaspyurFlower:
+    name:           Hamaspyur
+    description:    Hamaspyur flower description
+    user_id:        1
+    type:           1
+  peopleFlower:
+    name:           People
+    description:    people flower description
+    user_id:        1
+    type:           1
+  placesFlower:
+    name:           Places
+    description:    places flower description
+    user_id:        1
+    type:           1
+  projectsFlower:
+    name:           Projects
+    description:    projects flower description
+    user_id:        1
+    type:           1
+  activitiesFlower:
+    name:           Activities
+    description:    activities flower description
+    user_id:        1
+    type:           1
+  newsFlower:
+    name:           News
+    description:    news flower description
+    user_id:        1
+    type:           1
+  eventsFlower:
+    name:           Events
+    description:    events flower description
+    user_id:        1
+    type:           1
+
+  peopleFlower:
+    name:           People
+    description:    Hamaspyur flower description
+    user_id:        1
+    type:           2
+
+User:
+  narek:
+    name:           Narek
+    email:          narek@hamaspyur.am
+  vahe:
+    name:           Vahe
+    email:          vahe@hamaspyur.am
+  tigran:
+    name:           Tigran
+    email:          tigran@hamaspyur.am
+
+Petal:
+  petal1:
+    flower1_id:     1 # hamaspyurFlower
+    colour:         'blue'
+    connection_id:  2 # people
+  petal2:
+    flower1_id:     1 # hamaspyurFlower
+    colour:         'blue'
+    connection_id:  3 # places
+  petal3:
+    flower1_id:     1 # hamaspyurFlower
+    colour:         'blue'
+    connection_id:  4 # projects
+  petal4:
+    flower1_id:     1 # hamaspyurFlower
+    colour:         'blue'
+    connection_id:  5 # activities
+  petal5:
+    flower1_id:     1 # hamaspyurFlower
+    colour:         'blue'
+    connection_id:  6 # news
+  petal6:
+    flower1_id:     1 # hamaspyurFlower
+    colour:         'blue'
+    connection_id:  7 # events
+
+  petal1-1:
+    flower1_id:     2
+    colour:         'red'
+    connection_id:  1
+  petal1-2:
+    flower1_id:     2
+    colour:         'green'
+    connection_id:  2
+  petal1-3:
+    flower1_id:     2
+    colour:         'purple'
+    connection_id:  3
